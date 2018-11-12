@@ -1,9 +1,1 @@
-Django==2.1.2
-django-widget-tweaks==1.4.3
-djangorestframework==3.9.0
-psycopg2==2.7.5
-pyttsx==1.1
 pyttsx3==2.7
-pytz==2018.6
-pywin32==224
-virtualenv==16.0.0
