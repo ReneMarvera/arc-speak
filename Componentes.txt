@@ -1,0 +1,16 @@
+- Mic.
+- Bocina.
+- Breadboard.
+- Cables.
+- Led.
+- Resitencias.
+
+- Raspberry
+- Tarjeta SD
+
+
+- Obtener el MP3 del Pyttsx3
+- Enviar el Mp3 por medio Http
+- API Rest con Django REST
+
+Enviar texto a API y devolver MP3
