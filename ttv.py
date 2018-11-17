@@ -1,5 +1,6 @@
 import pyttsx3
 import requests
+import speech_recognition as sr
 
 def charlieSpeak(cad):
 
@@ -13,12 +14,15 @@ def charlieSpeak(cad):
 
 	engine.say(cad)
 	engine.runAndWait()
-	
 
-str1 = input("Ingresa un texto: ")
+
+#str1 = input("Ingresa un texto: ")
+text =  sr.RecognizeSpeech('myspeech.wav', 4)
+print("\nDice: {}".format(text))
+
 resp = requests.post("http://209.97.143.4:8000/arclight/parsemessage", data = {
 	"model_id":"5bd642c741d1701e640c938e",
-	"message":str1
+	"message":text
 })
 
 intent_name =  resp.json()['result']['intent']['name']

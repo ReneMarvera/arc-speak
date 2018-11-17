@@ -33,10 +33,11 @@ def RecognizeSpeech(AUDIO_FILENAME, num_seconds = 5):
     # return the text
     return text
 
-if __name__ == "__main__":
+"""if __name__ == "__main__":
     salir = ""
     while(salir == ""):
         text =  RecognizeSpeech('myspeech.wav', 4)
         print("\nDice: {}".format(text))
         if(text == "salir"):
             salir = "salir"
+"""
