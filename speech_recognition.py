@@ -25,7 +25,7 @@ def RecognizeSpeech(AUDIO_FILENAME, num_seconds = 5):
                          data = audio)
 
     # converting response content to JSON format
-    data = json.loads(resp.content)
+    data = json.loads(resp.content.decode('utf-8'))
 
     # get text from data
     text = data['_text']
